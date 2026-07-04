@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TAKSAM Engineering Co. | Industrial Combustion & Automation</title>
+  <meta name="description" content="TAKSAM Engineering Co. professional archive: industrial combustion, automation, burners, furnaces, boilers, fuel systems, instrumentation, and process control experience." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --soft: #94a3b8;
+      --line: rgba(255,255,255,.12);
+      --accent: #f59e0b;
+      --accent-2: #22c55e;
+      --white: #ffffff;
+      --max: 1120px;
+      --radius: 22px;
+      --shadow: 0 18px 60px rgba(0,0,0,.25);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(245,158,11,.18), transparent 32rem),
+        radial-gradient(circle at top right, rgba(34,197,94,.12), transparent 28rem),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    body[dir="rtl"] {
+      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(15, 23, 42, .78);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 76px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent), #ef4444);
+      box-shadow: 0 12px 30px rgba(245,158,11,.25);
+      color: #111827;
+      font-weight: 900;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--white); }
+
+    .lang {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 14px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 86px 0 58px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #fde68a;
+      border: 1px solid rgba(245,158,11,.28);
+      background: rgba(245,158,11,.08);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 74px);
+      line-height: .98;
+      letter-spacing: -.04em;
+      margin: 0 0 22px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .lead {
+      font-size: 20px;
+      max-width: 720px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 13px 18px;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.07);
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      border-color: transparent;
+      color: #111827;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .status-card {
+      padding: 26px;
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      border-radius: 999px;
+      padding: 7px 11px;
+      background: rgba(34,197,94,.12);
+      border: 1px solid rgba(34,197,94,.28);
+      color: #bbf7d0;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .metric {
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(15,23,42,.55);
+      border: 1px solid var(--line);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1.1;
+      color: var(--white);
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 4px;
+      color: var(--soft);
+      font-size: 13px;
+    }
+
+    section {
+      padding: 56px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 26px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .service {
+      padding: 22px;
+      min-height: 190px;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: rgba(245,158,11,.14);
+      border: 1px solid rgba(245,158,11,.22);
+      margin-bottom: 14px;
+      font-size: 21px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .panel {
+      padding: 28px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+    }
+
+    .item strong {
+      display: block;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .notice {
+      border-left: 4px solid var(--accent);
+      padding: 22px;
+      background: rgba(245,158,11,.08);
+      border-radius: 18px;
+    }
+
+    body[dir="rtl"] .notice {
+      border-left: 1px solid var(--line);
+      border-right: 4px solid var(--accent);
+    }
+
+    footer {
+      padding: 36px 0;
+      border-top: 1px solid var(--line);
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    [data-lang] { display: none; }
+    body.lang-en [data-lang="en"] { display: revert; }
+    body.lang-fa [data-lang="fa"] { display: revert; }
+
+    @media (max-width: 860px) {
+      nav ul { display: none; }
+      .hero-grid, .split { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .hero { padding-top: 58px; }
+    }
+  </style>
+</head>
+
+<body class="lang-en" dir="ltr">
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="TAKSAM home">
+        <span class="mark">T</span>
+        <span>TAKSAM</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul data-lang="en">
+          <li><a href="#legacy">Legacy</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#projects">Project History</a></li>
+          <li><a href="#status">Current Status</a></li>
+        </ul>
+        <ul data-lang="fa">
+          <li><a href="#legacy">سوابق</a></li>
+          <li><a href="#capabilities">توانمندی‌ها</a></li>
+          <li><a href="#projects">پروژه‌ها</a></li>
+          <li><a href="#status">وضعیت فعلی</a></li>
+        </ul>
+      </nav>
+
+      <button class="lang" id="langToggle" type="button">فارسی</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow" data-lang="en">Professional archive & future-ready presence</div>
+          <div class="eyebrow" data-lang="fa">آرشیو حرفه‌ای و آمادگی برای آینده</div>
+
+          <div data-lang="en">
+            <h1>TAKSAM Engineering Co.</h1>
+            <p class="lead">Industrial combustion, automation, instrumentation, and process-control experience for furnaces, boilers, burners, dryers, kilns, fuel systems, and energy-efficiency projects.</p>
+          </div>
+
+          <div data-lang="fa">
+            <h1>شرکت مهندسی تکسام</h1>
+            <p class="lead">تجربه مهندسی در حوزه احتراق صنعتی، اتوماسیون، ابزار دقیق و کنترل فرایند برای کوره‌ها، بویلرها، مشعل‌ها، خشک‌کن‌ها، خطوط سوخت و پروژه‌های بهینه‌سازی انرژی.</p>
+          </div>
+
+          <div class="actions" data-lang="en">
+            <a class="btn primary" href="#capabilities">View capabilities</a>
+            <a class="btn" href="#status">Current status</a>
+          </div>
+
+          <div class="actions" data-lang="fa">
+            <a class="btn primary" href="#capabilities">مشاهده توانمندی‌ها</a>
+            <a class="btn" href="#status">وضعیت فعلی</a>
+          </div>
+        </div>
+
+        <aside class="card status-card">
+          <div class="status-badge" data-lang="en">Not currently accepting projects</div>
+          <div class="status-badge" data-lang="fa">در حال حاضر پروژه جدید پذیرفته نمی‌شود</div>
+
+          <div data-lang="en">
+            <h3>Preserved for a future reopening</h3>
+            <p>TAKSAM has not been active for several years. This site is maintained to preserve the company’s technical history and prepare a professional foundation for possible future operations.</p>
+          </div>
+
+          <div data-lang="fa">
+            <h3>حفظ سوابق برای بازگشایی احتمالی در آینده</h3>
+            <p>تکسام چندین سال است که فعالیت اجرایی ندارد. این وب‌سایت برای حفظ سوابق فنی شرکت و آماده‌سازی یک بستر حرفه‌ای برای احتمال فعالیت دوباره در آینده نگهداری می‌شود.</p>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <strong data-lang="en">Private</strong>
+              <strong data-lang="fa">خصوصی</strong>
+              <span data-lang="en">project background</span>
+              <span data-lang="fa">سوابق پروژه‌ها</span>
+            </div>
+            <div class="metric">
+              <strong data-lang="en">Industrial</strong>
+              <strong data-lang="fa">صنعتی</strong>
+              <span data-lang="en">engineering focus</span>
+              <span data-lang="fa">تمرکز مهندسی</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="legacy">
+      <div class="wrap split">
+        <div class="section-head">
+          <h2 data-lang="en">Legacy & Experience</h2>
+          <h2 data-lang="fa">سوابق و تجربه‌ها</h2>
+        </div>
+
+        <div class="card panel">
+          <div data-lang="en">
+            <p>TAKSAM Engineering Co. was established with a focus on industrial combustion systems, process control, automation, burners, furnaces, boilers, dryers, fuel lines, instrumentation, and energy-efficiency solutions.</p>
+            <br />
+            <p>Over the years, TAKSAM completed a wide range of private-sector industrial projects across industries such as sugar production, steel, cement, lime, ceramics, glass, boiler systems, fuel conversion, burner systems, monitoring, and control.</p>
+          </div>
+
+          <div data-lang="fa">
+            <p>شرکت مهندسی تکسام با تمرکز بر سیستم‌های احتراق صنعتی، کنترل فرایند، اتوماسیون، مشعل‌ها، کوره‌ها، بویلرها، خشک‌کن‌ها، خطوط سوخت، ابزار دقیق و راهکارهای بهینه‌سازی انرژی فعالیت خود را آغاز کرد.</p>
+            <br />
+            <p>تکسام در طول سال‌های فعالیت خود پروژه‌های متعددی را در بخش خصوصی و در صنایع مختلف از جمله قند و شکر، فولاد، سیمان، آهک، سرامیک، شیشه، سیستم‌های بویلر، تبدیل سوخت، مشعل، مانیتورینگ و کنترل اجرا کرده است.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities">
+      <div class="wrap">
+        <div class="section-head" data-lang="en">
+          <h2>Technical Capabilities</h2>
+          <p>A summary of TAKSAM’s historical technical areas and engineering background.</p>
+        </div>
+
+        <div class="section-head" data-lang="fa">
+          <h2>توانمندی‌های فنی</h2>
+          <p>خلاصه‌ای از حوزه‌های فنی و تجربه مهندسی تکسام در سال‌های فعالیت.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card service">
+            <div class="icon">🔥</div>
+            <h3 data-lang="en">Combustion Systems</h3>
+            <h3 data-lang="fa">سیستم‌های احتراق</h3>
+            <p data-lang="en">Burners, furnaces, boilers, dryers, kilns, flame monitoring, tuning, and safe combustion-control concepts.</p>
+            <p data-lang="fa">مشعل‌ها، کوره‌ها، بویلرها، خشک‌کن‌ها، مانیتورینگ شعله، تیونینگ و مفاهیم کنترل ایمن احتراق.</p>
+          </article>
+
+          <article class="card service">
+            <div class="icon">⚙️</div>
+            <h3 data-lang="en">Automation & Control</h3>
+            <h3 data-lang="fa">اتوماسیون و کنترل</h3>
+            <p data-lang="en">Industrial control panels, monitoring systems, PLC-based automation, instrumentation, and process-control integration.</p>
+            <p data-lang="fa">تابلوهای کنترل صنعتی، سامانه‌های مانیتورینگ، اتوماسیون مبتنی بر PLC، ابزار دقیق و یکپارچه‌سازی کنترل فرایند.</p>
+          </article>
+
+          <article class="card service">
+            <div class="icon">⛽</div>
+            <h3 data-lang="en">Fuel & Energy Projects</h3>
+            <h3 data-lang="fa">پروژه‌های سوخت و انرژی</h3>
+            <p data-lang="en">Fuel lines, fuel conversion, gas systems, efficiency improvements, and practical industrial energy solutions.</p>
+            <p data-lang="fa">خطوط سوخت، تبدیل سوخت، سیستم‌های گاز، بهبود بازدهی و راهکارهای عملی انرژی در صنعت.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap split">
+        <div class="section-head">
+          <h2 data-lang="en">Project History</h2>
+          <h2 data-lang="fa">تاریخچه پروژه‌ها</h2>
+          <p data-lang="en">The detailed historical project list can be organized and added in a later version of this website.</p>
+          <p data-lang="fa">فهرست دقیق پروژه‌های گذشته می‌تواند در نسخه‌های بعدی این وب‌سایت به‌صورت منظم اضافه شود.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="item">
+            <strong data-lang="en">Industrial plants</strong>
+            <strong data-lang="fa">کارخانجات صنعتی</strong>
+            <p data-lang="en">Experience related to sugar, steel, cement, lime, ceramics, glass, and mineral-processing environments.</p>
+            <p data-lang="fa">تجربه در محیط‌های صنعتی مرتبط با قند و شکر، فولاد، سیمان، آهک، سرامیک، شیشه و فرآوری مواد معدنی.</p>
+          </div>
+
+          <div class="item">
+            <strong data-lang="en">Thermal equipment</strong>
+            <strong data-lang="fa">تجهیزات حرارتی</strong>
+            <p data-lang="en">Historical work involving boilers, burners, furnaces, dryers, kilns, combustion chambers, and related systems.</p>
+            <p data-lang="fa">سوابق کاری مرتبط با بویلرها، مشعل‌ها، کوره‌ها، خشک‌کن‌ها، اتاق‌های احتراق و سیستم‌های مرتبط.</p>
+          </div>
+
+          <div class="item">
+            <strong data-lang="en">Monitoring & controls</strong>
+            <strong data-lang="fa">مانیتورینگ و کنترل</strong>
+            <p data-lang="en">Automation, instrumentation, control cabinets, process monitoring, and industrial system modernization.</p>
+            <p data-lang="fa">اتوماسیون، ابزار دقیق، تابلوهای کنترل، مانیتورینگ فرایند و نوسازی سیستم‌های صنعتی.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="status">
+      <div class="wrap">
+        <div class="card panel notice">
+          <div data-lang="en">
+            <h2>Current Status</h2>
+            <p>TAKSAM is not currently active and is not accepting new projects at this time. This website is maintained to preserve the company’s professional history, technical background, and project experience. A contact channel may be added in the future if TAKSAM resumes operations under conditions that allow transparent, private, and internationally connected business activity.</p>
+          </div>
+
+          <div data-lang="fa">
+            <h2>وضعیت فعلی</h2>
+            <p>تکسام در حال حاضر فعال نیست و پروژه جدیدی نمی‌پذیرد. این وب‌سایت برای حفظ سوابق حرفه‌ای، پیشینه فنی و تجربه‌های اجرایی شرکت نگهداری می‌شود. در صورت ازسرگیری فعالیت تکسام در آینده و فراهم شدن شرایط فعالیت شفاف، خصوصی و متصل به اقتصاد جهانی، امکان ارتباط و تماس به وب‌سایت اضافه خواهد شد.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span data-lang="en">© <span id="year-en"></span> TAKSAM Engineering Co. Professional archive.</span>
+      <span data-lang="fa">© <span id="year-fa"></span> شرکت مهندسی تکسام. آرشیو حرفه‌ای.</span>
+      <span>TAKSAM.NET</span>
+    </div>
+  </footer>
+
+  <script>
+    const body = document.body;
+    const btn = document.getElementById("langToggle");
+    const year = new Date().getFullYear();
+    document.getElementById("year-en").textContent = year;
+    document.getElementById("year-fa").textContent = year;
+
+    function setLang(lang) {
+      if (lang === "fa") {
+        body.classList.remove("lang-en");
+        body.classList.add("lang-fa");
+        body.setAttribute("dir", "rtl");
+        body.setAttribute("lang", "fa");
+        btn.textContent = "English";
+        document.title = "شرکت مهندسی تکسام | احتراق صنعتی و اتوماسیون";
+      } else {
+        body.classList.remove("lang-fa");
+        body.classList.add("lang-en");
+        body.setAttribute("dir", "ltr");
+        body.setAttribute("lang", "en");
+        btn.textContent = "فارسی";
+        document.title = "TAKSAM Engineering Co. | Industrial Combustion & Automation";
+      }
+      localStorage.setItem("taksam-language", lang);
+    }
+
+    btn.addEventListener("click", () => {
+      setLang(body.classList.contains("lang-en") ? "fa" : "en");
+    });
+
+    setLang(localStorage.getItem("taksam-language") || "en");
+  </script>
+</body>
+</html>
