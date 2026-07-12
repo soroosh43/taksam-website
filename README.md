@@ -41,3 +41,70 @@ v10 update:
 - Persian contact card now hides English labels/words in Persian mode.
 - Persian phone numbers remain isolated left-to-right and no-wrap.
 - Persian navigation item "تجهیزات صنعتی مرتبط" is forced to stay on one row.
+
+
+v11 updates:
+- Embedded TAKSAM logo in HTML to prevent missing-logo display in Cloudflare/GitHub preview.
+- Embedded Pioneer profile photos and one critical product image to avoid missing-image alt text.
+- Corrected Puya/Pouya Tejarat Mahan to Tiva Sanat Mahan.
+- Added COMPANIES WHO TRUST US animated section before Pioneers.
+- Added stable Blowtherm technology-partner logo plus rolling client logo bar.
+- Removed public placeholder equipment cards until more catalogs are supplied.
+
+
+v12 updates:
+- Added scroll-triggered animated counters for 40+, 400+, 11, and 24/7 homepage metrics.
+- Added a cinematic rolling photo background behind the hero, with dark overlays to keep TAKSAM text readable.
+- Upgraded COMPANIES WHO TRUST US effect so the title grows from small/blurred to full readable size when scrolled into view.
+- Kept existing typography and improved readability over motion images.
+
+
+v13 update:
+- Increased visibility of rolling hero background photos.
+- Reduced dark overlay strength while preserving headline readability.
+- Brightened/saturated hero motion images and slightly enlarged the photo frames.
+
+
+v14 update:
+- Made the rolling hero background photos significantly more visible.
+- Reduced the full-section dark overlay further.
+- Increased brightness, contrast, saturation, and size of the rolling photo frames.
+- Added stronger text shadow to protect readability instead of darkening the whole background.
+
+
+v15 update:
+- Updated homepage hero title to: Advanced components and precision controls for industrial combustion and thermal processes.
+
+
+v16 update:
+- Reduced desktop hero headline size for the longer title.
+- Shifted the hero text slightly left.
+- Reduced hero column gap and card width so the title and photo frame stay inside the desktop window.
+- Added overflow protection to prevent horizontal page overflow.
+
+
+v17 update:
+- Fixed desktop hero section so the long title, paragraph, and right photo card remain fully visible.
+- Increased hero height/padding and adjusted the grid width.
+- Widened the title column so the headline breaks closer to the requested reference image.
+- Prevented vertical clipping while keeping horizontal overflow controlled.
+
+
+v18 update:
+- Added The Team Behind TAKSAM bar below Samira Hamoudi on the Pioneers page.
+- Added team.html with photos and text from the provided DOCX.
+- Added team contributors: Sima Momtahan, Ahmad Nouroozi, Fariborz Sharifi, Reza Mohammadi, Arash Momtahan, Dr. Nima Momtahan, Baher Mosadegh, Masoud Ghiasvand, and Laila Ghadamyari.
+- Added footer links to the new team page.
+
+
+v19 update:
+- Fixed team-page photo cropping for Sima Momtahan and Fariborz Sharifi by changing portrait display to contain instead of cover.
+
+
+v20 update:
+- Reframed Fariborz Sharifi portrait on the team page so the chin is not cropped and the image has more respectful breathing room.
+
+
+v21 update:
+- Replaced Fariborz Sharifi photo with the newly supplied portrait.
+- Forced the Fariborz portrait to display fully without cropping.
